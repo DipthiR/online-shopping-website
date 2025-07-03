@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>ONLINE SHOPPING</h1>
+  </header>
+
+  <main>
+    <!-- User Details Form -->
+    <section class="form-section" id="formSection">
+      <h2>Enter Your Details</h2>
+      <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Show User Details -->
+    <section class="details-section" id="detailsSection" style="display: none;">
+      <h2>Your Details</h2>
+      <p><strong>Name:</strong> <span id="displayName"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+    </section>
+
+    <!-- Shopping Section -->
+    <section class="shop-section" id="shopSection" style="display: none;">
+      <h2>Products</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="C:\Users\dipthi\OneDrive\Pictures\pen1.jpg" alt="Product 1" />
+          <h3>Product 1</h3>
+          <p>RS.20</p>
+          <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+          <button onclick="viewDetails('Product 1', 20, 'product1.jpg', 'A great first product.')">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="D:\pen3.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <p>RS.40</p>
+          <button onclick="addToCart('Product 2', 40)">Add to Cart</button>
+          <button onclick="viewDetails('Product 2', 40, 'product2.jpg', 'An amazing second product.')">View Details</button>
+        </div>
+        <div class="product-card">
+          <img src="D:\pen4.jpg" alt="Product 3" />
+          <h3>Product 3</h3>
+          <p>RS.60</p>
+          <button onclick="addToCart('Product 3', 60)">Add to Cart</button>
+          <button onclick="viewDetails('Product 3', 60, 'product3.jpg', 'A fantastic third product.')">View Details</button>
+        </div>
+      </div>
+
+      <h3>Your Cart:</h3>
+      <ul id="cartItems"></ul>
+
+      <h3 id="cartTotal">Total: 0</h3>
+
+      <button id="shopNowBtn" onclick="shopNow()" style="display: none;">Place Order</button>
+    </section>
+
+    <!-- Order Confirmation -->
+    <section id="orderSection" style="display: none;">
+      <h2>Order Placed Successfully!</h2>
+      <p>Thank you, <span id="orderName"></span>!</p>
+      <p>Confirmation sent to <span id="orderEmail"></span>.</p>
+      <h3>Order Summary:</h3>
+      <ul id="orderItems"></ul>
+      <h3 id="orderTotal"></h3>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Oline Shopping</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
