@@ -1,74 +1,58 @@
 # online-shopping-website
 
-## 🛒 Online Shopping System
+## Online Shopping System (HTML/CSS/JS)
 
-An Online Shopping System built with Python (or your tech stack), designed to simulate the process of online purchasing.
-It allows customers to browse products, add them to a cart, and proceed with checkout in a simple and user-friendly way.
+A front-end Online Shopping System built using HTML, CSS, and JavaScript.
+This project simulates a basic e-commerce website where users can browse products, add them to a cart, and view their selections.
 
-## 🌟 Features
+## Features
 
-👤 User Management
+ Browse products with images, price, and description
 
-Sign up / Login system
+ Add products to shopping cart
 
-Profile management
+ Remove products from cart
 
-## 🛍️ Product Management
+ Display total price of selected items
 
-Browse products by category
+ Responsive design for desktop and mobile screens
 
-Search and filter items
+ Simple search and filter functionality
 
-View product details
+## Tech Stack
 
-## 🛒 Shopping Cart
+Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
 
-Add, update, and remove products
+Optional Enhancements: Bootstrap for styling, localStorage for storing cart data
 
-Calculate total cost
-
-## 💳 Checkout System
-
-Place orders
-
-Select payment options (COD / Online Payment simulation)
-
-Order confirmation
-
-## 🔑 Admin Features
-
-Add, update, and delete products
-
-Manage user orders
-
-## 🛠️ Tech Stack
-
-Frontend: HTML, CSS, JavaScript (if web-based)
-
-Backend: Python (Flask / Django) or Java / PHP
-
-Database: MySQL / SQLite / PostgreSQL
-
-Optional: Pygame (if GUI-based desktop app)
-
-## 🚀 How to Run
+## How to Run
 
 Clone this repository:
 
-git clone https://github.com/your-username/online-shopping-system.git
-cd online-shopping-system
+git clone https://github.com/your-username/online-shopping-system-html.git
+cd online-shopping-system-html
 
 
-Install dependencies (if Python-based):
+Open index.html in your browser:
 
-pip install -r requirements.txt
-
-
-Run the application:
-
-python app.py
+double-click index.html or right-click -> Open With -> Browser
 
 
+Interact with the shopping system:
+
+Browse products
+
+Add/remove items from cart
+
+Check total price
+
+## Project Structure
+online-shopping-system-html/
+│── index.html           # Main webpage
+│── style.css            # CSS styles
+│── script.js            # JavaScript functionality
+│── images/              # Product images
+│── README.md            # Documentation
 Open your browser and go to:
 
 http://127.0.0.1:5000/
